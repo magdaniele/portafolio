@@ -1,0 +1,26 @@
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1;
+  .logo {
+    color: #fff;
+    padding: 0 20px;
+  }
+  .navbar_item_list {
+    display: flex;
+    padding: 0 40px;
+    .navbar_item {
+      list-style: none;
+      cursor: pointer;
+      padding: 10px 10px;
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

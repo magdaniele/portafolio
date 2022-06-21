@@ -1,0 +1,40 @@
+//Vars
+$assetPath : "../../../assets/images";
+
+//Functions
+@function get-path-to-assets($assetPath){
+  @return $assetPath;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: url(../../../assets/images/background-image2.jpg);
+    justify-content: center;
+    min-height: 100vh;
+    width: 99vw;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1{
+        color: rgb(255, 255, 255);
+    }
+}
+
+.main-button{
+    border-color: white;
+    border-width: 1px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border-radius: 5%;
+}
+
+.main-button:hover{
+    background-color: white;
+    color: black;
+}
