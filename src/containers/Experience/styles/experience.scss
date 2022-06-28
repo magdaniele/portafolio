@@ -1,0 +1,15 @@
+.experience-container{
+    margin : 50px;
+    height: 100vh;
+    #experience-title{
+        text-align: center;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 100px;
+        grid-auto-rows: minmax(100px, auto);
+        justify-items: center;
+    }
+}

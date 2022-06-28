@@ -1,0 +1,32 @@
+.about-container {
+    margin: 50px;
+    height: 100vh;
+    #about-title {
+        text-align: center;
+    }
+    .about-card {
+        display: flex;
+        margin: 0 10%;
+        width: 80%;
+        border-radius: 20px;
+        box-shadow: -1px 15px 30px -12px black;
+        padding: 3rem 0;
+        #section-pic{
+            width: 50%;
+            #picture-div{
+                text-align: center;
+                margin-block-start: 1em;
+                #profile-img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }}
+        }
+        #section-about{
+            width: 50%;
+            border-left: 3px dotted #bbb;
+            
+            padding: 0 2rem;
+        }
+    }
+}

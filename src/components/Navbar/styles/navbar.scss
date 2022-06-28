@@ -1,11 +1,13 @@
 .navbar {
   width: 100%;
-  background-color: transparent;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   z-index: 1;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
   .logo {
     color: #fff;
     padding: 0 20px;

@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     h1 {
-        color: $color5;
+        color: white;
     }
     .footer_item_list {
         display: flex;
@@ -15,14 +15,22 @@
         justify-content: center;
         .footer_item {
             list-style-type: none;
-            border: groove;
+            border: solid;
             border-radius: 50px;
-            border-color: $color5;
+            border-color: white;
             padding: 20px;
             width: 50px;
             margin: 20px;
             .network_logo{
-                fill: $color5;
+                fill: white;
+            }
+            
+        }
+        .footer_item:hover{
+            border-color: $color1;
+            background-color: white;
+            .network_logo{
+                fill: $color1;
             }
         }
     }

@@ -1,8 +1,19 @@
+import { useState } from 'react';
 import "./styles/navbar.scss";
 
 const Navbar = () => {
+    const [colorChange, setColorchange] = useState('transparent');
+    const changeNavbarColor = () =>{
+       if(window.scrollY >= 900){
+         setColorchange('#0E005F');
+       }
+       else{
+         setColorchange('transparent');
+       }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
     return (
-        <nav className="navbar">
+        <nav className="navbar" style={{backgroundColor:`${colorChange}`}}>
             <p className="logo">
                 <a href="/">Welcome to my portafolio</a>
             </p>

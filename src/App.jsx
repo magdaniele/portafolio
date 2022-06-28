@@ -1,8 +1,10 @@
 import './App.css';
-import Tecnology from './components/Tecnology/tecnology';
 import Navbar from './components/Navbar/navbar';
 import Main from './containers/Main/main';
 import Footer from './components/Footer/footer';
+import About from './containers/About/about';
+import Experience from './containers/Experience/experience';
+import Tecnologies from './containers/Tecnologies/tecnologies';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
         <Navbar/>
       </header>
       <Main/>
-      <Tecnology/>
+      <About/>
+      <Experience/>
+      <Tecnologies/>
       <Footer/>
     </div>
   );
