@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/portafolio/static/css/main.db1009d4.css",
+    "main.js": "/portafolio/static/js/main.832423cd.js",
+    "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
+    "static/media/background-image2.jpg": "/portafolio/static/media/background-image2.d564965bf3805afd8e32.jpg",
+    "static/media/background-image.jpg": "/portafolio/static/media/background-image.2664418daddb1a370d91.jpg",
+    "static/media/Figma.png": "/portafolio/static/media/Figma.7888cc72a3a01656c921.png",
+    "static/media/Postgres.png": "/portafolio/static/media/Postgres.205c6e1cf88f5fb991e4.png",
+    "static/media/aboutPicture.jpg": "/portafolio/static/media/aboutPicture.5ff3a2b4e463229a64ed.jpg",
+    "static/media/Jquery.png": "/portafolio/static/media/Jquery.5218d846e86fbcafcc5d.png",
+    "static/media/aboutPicture2.jpg": "/portafolio/static/media/aboutPicture2.9622b0774856ac93b81d.jpg",
+    "static/media/Sass.png": "/portafolio/static/media/Sass.58e61bc991e55a95072b.png",
+    "static/media/Php.png": "/portafolio/static/media/Php.b59deec830f215d303b4.png",
+    "static/media/Html.png": "/portafolio/static/media/Html.1d7b133e22ffe4829da6.png",
+    "static/media/Css.png": "/portafolio/static/media/Css.9f33c557b92e4e2e1cc8.png",
+    "static/media/Bootstrap.png": "/portafolio/static/media/Bootstrap.d5210cdeab1bc94309c4.png",
+    "static/media/Flutter.png": "/portafolio/static/media/Flutter.157233b7f678b00c5581.png",
+    "static/media/Javascript.png": "/portafolio/static/media/Javascript.1707d09a3f6f31bb97e8.png",
+    "static/media/Db2.png": "/portafolio/static/media/Db2.deb5cce222cb76ba5358.png",
+    "static/media/React.png": "/portafolio/static/media/React.24793fd6bc7a501efd27.png",
+    "static/media/Typescript.png": "/portafolio/static/media/Typescript.bb13ebd9561a6ee645c2.png",
+    "static/media/Sql.png": "/portafolio/static/media/Sql.716ccee06a2406fb4ec4.png",
+    "index.html": "/portafolio/index.html",
+    "static/media/wave.svg": "/portafolio/static/media/wave.0162dff345b56ea9ea21.svg",
+    "main.db1009d4.css.map": "/portafolio/static/css/main.db1009d4.css.map",
+    "main.832423cd.js.map": "/portafolio/static/js/main.832423cd.js.map",
+    "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db1009d4.css",
+    "static/js/main.832423cd.js"
+  ]
+}
