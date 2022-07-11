@@ -7,9 +7,34 @@
 
     section{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-gap: 100px;
+        grid-template-columns: repeat(12, minmax(auto, 60px));
+        grid-column: 2 / span 12;
         grid-auto-rows: minmax(100px, auto);
         justify-items: center;
     }
+
+    @media only screen and (max-width: 1000px) {
+        .flip-card {
+          grid-column-end: span 6;
+        }
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .flip-card {
+          grid-column-end: span 12;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .section{
+          grid-column: 2 / span 6;
+          grid-template-columns: repeat(6, 1fr);
+          grid-gap: 20px;
+        }
+        .flip-card {
+          grid-column-end: span 6;
+        }
+      }
+      
 }

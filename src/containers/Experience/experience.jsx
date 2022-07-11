@@ -2,9 +2,9 @@ import "./styles/experience.scss";
 import Card from "../../components/Card/card";
 import imagen from "../../assets/images/background-image2.jpg";
 
-function Experience() {
+function Experience({innerRef}) {
   return (
-    <div className="experience-container">
+    <div className="experience-container" id="experience" ref={innerRef}>
       <h1 id="experience-title">Experience</h1>
       <section id='experience-section'>
         <Card

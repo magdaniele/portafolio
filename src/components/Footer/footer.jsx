@@ -40,6 +40,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
+      <h4>Copyright 2022 © @magdaniele All Rights Reserved. Privacy Policy</h4>
     </footer>
   );
 };

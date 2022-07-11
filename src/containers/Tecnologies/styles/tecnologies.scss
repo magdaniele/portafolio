@@ -1,7 +1,99 @@
-.tecnologies-container{
-    margin : 50px;
+//variables
+$hexaValue: 5.19615em;
+$copeValue: 3em;
+.tecnologies-container {
+    margin: 50px;
     height: 100vh;
-    #tecnologies-title{
+    #tecnologies-title {
         text-align: center;
+    }
+    .hexagonos {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 240px);
+        grid-template-columns: repeat(5, 1fr);
+        height: 100vh;
+        align-items: center;
+        justify-items: center;
+        .imagenTec {
+            width: 200px;
+            height: 150px;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            p {
+                opacity: 0;
+                transform: scale(0);
+                transition: 0.8s;
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+        .imagenTec:hover {
+            box-shadow: 0 0 0 200px #051b30bf inset;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 20px 10px;
+            p {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .imgTecnologies {
+            padding: 10px;
+            width: 100px;
+        }
+        /*  .hexagono {
+            height: 6em;
+            margin: $hexaValue 0;
+            position: relative;
+            background-color: #ccc;
+            width: calc(2 * $hexaValue);
+        }
+        .hexagono:before {
+            border-right: $hexaValue solid transparent;
+            border-bottom: $copeValue solid #ccc;
+            border-left: $hexaValue solid transparent;
+            content: "";
+            height: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: -$copeValue;
+            width: 0;
+        }
+        .hexagono:after {
+            border-top: $copeValue solid #ccc;
+            border-right: $hexaValue solid transparent;
+            border-left: $hexaValue solid transparent;
+            bottom: -$copeValue;
+            content: "";
+            height: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            width: 0;
+        }
+                .hexagono:first-child{
+            left: -85px;
+        }
+        .hexagono:nth-child(even){
+            background-color: transparent;
+        }
+        .hexagono:nth-child(even):before{
+            border-color: transparent;
+        }
+        .hexagono:nth-child(even):after {
+            border-color: transparent;
+        }
+
+        .hexagono:nth-child(odd):not(:first-child){
+            top: -200px;
+            left: -190px;
+        } */
     }
 }
