@@ -25,7 +25,7 @@ function About({innerRef}) {
               aprender nuevas tecnologias. Adicionalmente, en mi tiempo libre me
               gusta salir con amigos, jugar videojuegos y ver series.
             </p>
-            
+            <p>Me considero una persona autodidacta, siempre dispuesto al trabajo en equipo y al aprendizaje continuo.</p>
           </div>
         </section>
       </div>

@@ -9,7 +9,7 @@ $heightCard: 400px;
   flex-direction: column;
   width: $widthCard;
   height: $heightCard;
-  border: 1px solid #f1f1f1;
+  //border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -37,22 +37,58 @@ $heightCard: 400px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   box-shadow: -1px 15px 30px -12px black;
+  p{
+    margin: 0 2em;
+    text-align: justify;
+  }
+  div {
+    display: flex;
+    width: inherit;
+    justify-content: space-around;
+    a {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0.75em 1.5em;
+      border: 0.25rem solid white;
+      z-index: 1;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 25%;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      color: white;
+      svg {
+        height: 2em;
+        fill: white;
+      }
+    }
+    a:hover {
+      background-color: #ffffff4a;
+      border-color: transparent;
+    }
+  }
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  //background-color: #bbb;
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+  justify-content: space-evenly;
 }
 
 .card {
-  width: $widthCard;
-  height: $heightCard;
+  margin-top: 25px;
+  width: calc($widthCard - 50px);
+  height: calc($heightCard - 50px);
 }

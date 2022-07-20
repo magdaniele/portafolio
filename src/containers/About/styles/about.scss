@@ -79,6 +79,9 @@ $dot-space: 22px;
             text-align: justify;
             font-size: 19px;
         }
+        p+p{
+            color: #11589c;
+        }
     }
 }
 

@@ -1,40 +1,80 @@
-.experience-container{
-    margin : 50px;
-    height: 100vh;
-    #experience-title{
-        text-align: center;
-    }
+.experience-container {
+  margin: 50px;
+  height: 100vh;
+  #experience-title {
+    text-align: center;
+  }
 
-    section{
-        display: grid;
-        grid-gap: 100px;
-        grid-template-columns: repeat(12, minmax(auto, 60px));
-        grid-column: 2 / span 12;
-        grid-auto-rows: minmax(100px, auto);
-        justify-items: center;
+  section {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-column: 2 / span 12;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    justify-content: center;
+    #Jbg-div {
+      div.flip-card-front {
+        background: center;
+        display: flex;
+        align-items: center;
+        inline-size: min-content;
+        img {
+          height: fit-content;
+          margin: 0 10px;
+        }
+      }
+      div.flip-card-back{
+        background-color: #228646;
+      }
     }
+    #Twitter-div{
+      div.flip-card-back{
+        background-color: #55adee;
+      }  
+    }
+    #Football-div{
+      div.flip-card-back{
+        background-color: gray;
+      }  
+    }
+    #DiabetesAssistant-div{
+      div.flip-card-back{
+        background-color: #84bdce;
+      }  
+    }
+    #Api-div{
+      div.flip-card-back{
+        background-color: #bc27fe;
+      }  
+    }
+    #Formulario-div{
+      div.flip-card-back{
+        background-color: #fe8f44;
+      }  
+    }
+  }
 
-    @media only screen and (max-width: 1000px) {
-        .flip-card {
-          grid-column-end: span 6;
-        }
-      }
-      
-      @media only screen and (max-width: 700px) {
-        .flip-card {
-          grid-column-end: span 12;
-        }
-      }
-      
-      @media only screen and (max-width: 500px) {
-        .section{
-          grid-column: 2 / span 6;
-          grid-template-columns: repeat(6, 1fr);
-          grid-gap: 20px;
-        }
-        .flip-card {
-          grid-column-end: span 6;
-        }
-      }
-      
+  @media only screen and (max-width: 1000px) {
+    .flip-card {
+      grid-column-end: span 6;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .flip-card {
+      grid-column-end: span 12;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .section {
+      grid-column: 2 / span 6;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+    }
+    .flip-card {
+      grid-column-end: span 6;
+    }
+  }
 }

@@ -228,7 +228,18 @@ div#mainDiv {
     left: 80%;
     z-index: 1;
 }
-
+#iconArrow{
+    animation: dropDownArrow 1s infinite alternate;
+    animation-timing-function:  ease-in-out;
+}
+@keyframes dropDownArrow {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
 @media only screen and (min-width: 250px) {
         div.content {
             font-size: 24px !important;

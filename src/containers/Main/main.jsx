@@ -1,6 +1,6 @@
 import "./styles/main.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
@@ -40,10 +40,11 @@ const Main = ({ innerRef }) => {
               <span id="im">soy </span><span style={{ whiteSpace: "pre" }} ref={el} />
             </div>
           </div>
-          <a className="main-button" href="/">
+          {/* <a className="main-button" href="/">
             <span>Contact me!</span>
             <i></i>
-          </a>
+          </a> */}
+          <span> <FontAwesomeIcon icon={faArrowDown} id="iconArrow" /></span>
         </div>
       <div className="ocean">
         <div className="wave"></div>
