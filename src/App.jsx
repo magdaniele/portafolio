@@ -21,7 +21,7 @@ function App() {
       <Main innerRef={section1Ref}/>
       <About innerRef={section2Ref}/>
       <Tecnologies innerRef={section3Ref}/> 
-       <Experience innerRef={section4Ref}/>
+      <Experience innerRef={section4Ref}/>
       <Footer/>
     </div>
   );

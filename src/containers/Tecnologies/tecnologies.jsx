@@ -11,7 +11,7 @@ function Tecnologies({innerRef}) {
                 Icons.map(({ name, path }) =>
                 <div className="imagenTec" key={`${name}Key`} style={{backgroundImage:`url(${require(`../../assets/images/svg/${path}`)})`}}>
                     {/* <img  className="imgTecnologies" src={require(`../../assets/images/${url}`)} alt={`${name}.png`} /> */}
-                    <p>
+                    <p> 
                         {name}
                     </p>
                 </div>

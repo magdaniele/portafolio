@@ -1,6 +1,7 @@
 import "./styles/main.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import picture from "../../assets/images/homePic.svg";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
@@ -33,12 +34,17 @@ const Main = ({ innerRef }) => {
       <div className="main-container">
         <div className="containerMain">
           <div className="content">
-            <FontAwesomeIcon icon={faLaptopCode} id="iconLogo" />
-            <br />
-            Eddy José Cardona Magdaniel
+            <section id="main-contentText">
+            <span>
+                Eddy José Cardona Magdaniel
+            </span>
             <div className="typeDiv">
-              <span id="im">soy </span><span style={{ whiteSpace: "pre" }} ref={el} />
+              <span style={{ whiteSpace: "pre" }} ref={el} />
             </div>
+            </section>
+            <section id="main-contentPic">
+              <img className="homePic" src={picture} alt="homePic"  id="iconLogo"/>
+            </section>
           </div>
           {/* <a className="main-button" href="/">
             <span>Contact me!</span>

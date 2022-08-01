@@ -37,7 +37,7 @@ $heightCard: 400px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   box-shadow: -1px 15px 30px -12px black;
-  p{
+  p {
     margin: 0 2em;
     text-align: justify;
   }
@@ -72,8 +72,9 @@ $heightCard: 400px;
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  //background-color: #bbb;
+  display: flex;
   color: black;
+  justify-content: center;
 }
 
 /* Style the back side */
@@ -88,7 +89,7 @@ $heightCard: 400px;
 }
 
 .card {
-  margin-top: 25px;
-  width: calc($widthCard - 50px);
-  height: calc($heightCard - 50px);
+  padding: 40px;
+  width: auto;
+  height: auto;
 }

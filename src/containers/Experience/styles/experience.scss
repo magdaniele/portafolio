@@ -1,8 +1,10 @@
 .experience-container {
-  margin: 50px;
-  height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 100px;
   #experience-title {
     text-align: center;
+    padding-top: 140px;
+    padding-bottom: 20px;
   }
 
   section {
@@ -14,16 +16,6 @@
     justify-items: center;
     justify-content: center;
     #Jbg-div {
-      div.flip-card-front {
-        background: center;
-        display: flex;
-        align-items: center;
-        inline-size: min-content;
-        img {
-          height: fit-content;
-          margin: 0 10px;
-        }
-      }
       div.flip-card-back{
         background-color: #228646;
       }

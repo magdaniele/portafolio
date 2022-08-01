@@ -1,3 +1,5 @@
+//varialbles
+@import "../variables.scss";
 //fonts
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
 
@@ -35,7 +37,7 @@ body::-webkit-scrollbar-thumb
 {
 	border-radius: 20px;
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #3399ff;
+	background-color: $color1;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

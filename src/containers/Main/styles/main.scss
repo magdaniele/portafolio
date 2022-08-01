@@ -1,14 +1,16 @@
-//Vars
+//image
 $assetPath: "../../../assets/images";
-
+//variables
+@import "../../../../variables.scss";
 //Functions
 @function get-path-to-assets($assetPath) {
     @return $assetPath;
 }
 div#mainDiv {
     height: 100vh;
+    background-color: $color1;
     /* .square {
-        background-color: #3399ff;
+        background-color: $color1;
         opacity: 0.35;
         width: 35px;
         height: 35px;
@@ -31,7 +33,7 @@ div#mainDiv {
         position: absolute;
         bottom: 0;
         left: 0;
-        background: #3399ff;
+        background: white;
     }
 
     .wave {
@@ -81,12 +83,11 @@ div#mainDiv {
     display: flex;
     flex-direction: row;
     align-items: center;
-    //background: url(../../../assets/images/background-image2.jpg);
     justify-content: center;
     height: 100vh;
     width: 100vw;
     position: relative;
-    //background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #3399ff 100%);
+    //background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, $color1 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,22 +97,27 @@ div#mainDiv {
     }
 
     div.content {
-        color: black;
-        font-size: 56px;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        color: white;
+        #main-contentText{
+            width: 40vw;
+            span{
+                font-size: 2em
+            }
+        }
         #iconLogo {
-            font-size: 120px;
+            width: 40vw;
         }
         .typeDiv {
             display: flex;
             justify-content: center;
-            #im {
-                justify-content: center;
-                padding-right: 10px;
-            }
             span {
                 display: block;
                 font-size: 24px;
-                color: black;
+                color: white;
+                //color: black;
             }
             .typed-cursor {
                 opacity: 1;
@@ -166,9 +172,6 @@ div#mainDiv {
 }
 
 .main-button:hover {
-    /* background-color: white;
-    color: black; 
-    letter-spacing: 0.25em;*/
     color: black;
     box-shadow: 0 0 35px white;
 }
@@ -286,7 +289,7 @@ div#mainDiv {
 
 @media only screen and (min-width: 900px) { 
     div.content {
-        font-size: 48px !important;
+        //font-size: 48px !important;
         div.typeDiv {
             span {
                 font-size: 24px !important;

@@ -1,16 +1,18 @@
 .navbar {
   width: 100vw;
-  position: fixed;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  z-index: 2;
+  padding-top: 20px;
+  position: fixed;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
+  z-index: 2;
   .logo {
     color: #fff;
-    padding: 0 20px;
+    padding: 10px 60px;
     margin: 1rem;
   }
   #contentNav {
@@ -18,16 +20,27 @@
     align-items: flex-start;
   }
   .navbar_item_list {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    place-items: center;
     padding: 0 60px;
+    list-style: none;
     .navbar_item {
-      list-style: none;
-      cursor: pointer;
-      padding: 10px 20px;
+      padding: 10px 30px;
       text-align: center;
-      :hover {
-        color: #3399ff !important;
+    }
+    .navbar_item.active {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 1px 1px 10px 0px #00000030;
+      transition: all 0.3s linear;
+      a{
+        color: #359EF9 !important;
       }
+    }
+    .navbar_item:hover {
+      cursor: pointer;
     }
   }
   a {
@@ -52,30 +65,32 @@
     display: block;
   }
   .navbar_item_list.responsive {
-    position: relative;
-    flex-direction: column;
-    background-color: transparentize($color: #0e005f, $amount: 1);
-    padding: 0px;
-    width: 200px;
-    text-align: center;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    :hover {
-      background-color: #fff;
-      a {
-        color: #000;
-      }
+    height: 95%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 5vh;
+    grid-auto-flow: row;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-transition: all 0.6s, display 0s ease-in-out;
+    -moz-transition: all 0.6s, display 0s ease-in-out;  
+    transition: all 0.6s, display 0s ease-in-out;
+    li {
+      float: none;
+      display: block;
+      text-align: center;
     }
+    a {
+      color: black;
+    }
+  }
+  #contentNav > button:hover {
+    cursor: pointer;
   }
   .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  .navbar_item_list.responsive li {
-    float: none;
-    display: block;
-    text-align: left;
   }
 }

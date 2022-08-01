@@ -4,38 +4,23 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./styles/navbar.scss";
 
 const Navbar = (props) => {
-  const {section1, section2, section3, section4 } = props;
-  const [backgroundColorChange/* , setBackgroundColorchange */] = useState("#FFFFFF");
-  const [colorChange/* , setColorchange */] = useState("black");
-/*   const [section2Ref, section2InView] = useInView({ threshold: 0.5 });
-  const [section3Ref, section3InView] = useInView({ threshold: 0.5 });
-  const [section4Ref, section4InView] = useInView({ threshold: 0.5 }); */
+  const { section1, section2, section3, section4 } = props;
+  const [styleChange, setStyleChange] = useState();
+  const [colorChange, setColorchange] = useState("#37373");
   const changeNavbarColor = () => {
-    /*if(section1){
-       document.getElementById('Home').style.color('#3399ff'); 
-      console.log('no pasa nada');
-    }else{
-       document.getElementById('Home').style.color('black') 
-      console.log('aqui toy');
-    }*/
-    /* console.log(window.scrollY);
-    if(window.outerWidth>700){
-        if (window.scrollY >= 8000) {
-          setBackgroundColorchange("#FFFFFF");
-          setColorchange("#0E005F")
-        } else {
-            setBackgroundColorchange("transparent");
-            setColorchange("#FFFFFF")
-        }
-    }else{
-        if (window.scrollY >= 1000) {
-            setBackgroundColorchange("#FFFFFF");
-            setColorchange("#0E005F")
-        } else {
-            setBackgroundColorchange("transparent");
-            setColorchange("#FFFFFF")
-        }
-    } */
+    if (!section1) {
+      setStyleChange({
+        backgroundColor: "white",
+        boxShadow: "rgb(0 0 0 / 19%) 1px 1px 10px 0px",
+      });
+      setColorchange("#373737");
+    } else {
+      setStyleChange({
+        backgroundColor: "transparent",
+        boxShadow: "none",
+      });
+      setColorchange("white");
+    }
   };
 
   const responsiveNavbar = () => {
@@ -48,27 +33,45 @@ const Navbar = (props) => {
   };
   window.addEventListener("scroll", changeNavbarColor);
   return (
-    <nav className="navbar" style={{ backgroundColor: `${backgroundColorChange}`}}>
+    <nav className="navbar" style={styleChange}>
       <div className="logo">
-        <a href="/" style={{color:  `${colorChange}`}}>@magdaniele</a>
+        <a href="/" style={{ color: `${colorChange}` }}>
+          @magdaniele
+        </a>
       </div>
       <div id="contentNav">
-        <ul className="navbar_item_list" id="myNavList" >
-          <li className="navbar_item">
-            <a href="#mainDiv" style={section1?{color:  `#3399ff`}:{color:  `black`}} id='HomeNav'>Home</a>
+        <ul className="navbar_item_list" id="myNavList">
+          <li className={section1 ? "navbar_item active" : "navbar_item"}>
+            <a href="#mainDiv" style={{ color: `${colorChange}` }} id="HomeNav">
+              Home
+            </a>
           </li>
-          <li className="navbar_item">
-            <a href="#about" style={section2?{color:  `#3399ff`}:{color:  `black`}}  id='AboutNav'>About Me</a>
+          <li className={section2 ? "navbar_item active" : "navbar_item"}>
+            <a href="#about" style={{ color: `${colorChange}` }} id="AboutNav">
+              About Me
+            </a>
           </li>
-          <li className="navbar_item">
-            <a href="#tecnologies" style={section3?{color:  `#3399ff`}:{color:  `black`}} id='TecnologiesNav'>Tecnologies</a>
+          <li className={section3 ? "navbar_item active" : "navbar_item"}>
+            <a
+              href="#tecnologies"
+              style={{ color: `${colorChange}` }}
+              id="TecnologiesNav"
+            >
+              Tecnologies
+            </a>
           </li>
-          <li className="navbar_item">
-            <a href="#experience" style={section4?{color:  `#3399ff`}:{color:  `black`}} id='ExperienceNav'>Experience</a>
+          <li className={section4 ? "navbar_item active" : "navbar_item"}>
+            <a
+              href="#experience"
+              style={{ color: `${colorChange}` }}
+              id="ExperienceNav"
+            >
+              Experience
+            </a>
           </li>
         </ul>
         <button className="icon" onClick={responsiveNavbar}>
-          <FontAwesomeIcon icon={faBars} style={{color:  `${colorChange}`}}/>
+          <FontAwesomeIcon icon={faBars} style={{ color: `${colorChange}` }} />
         </button>
       </div>
     </nav>
