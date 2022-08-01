@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.45e49cac.css",
-    "main.js": "/portafolio/static/js/main.54fac8df.js",
+    "main.css": "/portafolio/static/css/main.ff7d5888.css",
+    "main.js": "/portafolio/static/js/main.58cd03a0.js",
     "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
     "static/media/Football.png": "/portafolio/static/media/Football.af90db22a0c74667bf9c.png",
     "static/media/diabetesAssistant.png": "/portafolio/static/media/diabetesAssistant.d8f32a63aa80956c5487.png",
@@ -9,6 +9,7 @@
     "static/media/aboutPicture2.jpg": "/portafolio/static/media/aboutPicture2.9622b0774856ac93b81d.jpg",
     "static/media/API.png": "/portafolio/static/media/API.6cce6df96b823040075f.png",
     "static/media/Twitter.png": "/portafolio/static/media/Twitter.57573394db94634d7e1f.png",
+    "static/media/homePic.svg": "/portafolio/static/media/homePic.e79c1017602e6ac65ec34ca4805a007c.svg",
     "static/media/Postman.svg": "/portafolio/static/media/Postman.e65afafee644ce9fe8a7.svg",
     "static/media/Bootstrap.svg": "/portafolio/static/media/Bootstrap.527d0fc09fb3280153c2.svg",
     "static/media/Datagrip.svg": "/portafolio/static/media/Datagrip.a056af3842aa51f9de23.svg",
@@ -29,18 +30,18 @@
     "static/media/Dart.svg": "/portafolio/static/media/Dart.48bbcb2d9c74d136020b.svg",
     "static/media/Javascript.svg": "/portafolio/static/media/Javascript.8ef0643e564a03e327b1.svg",
     "static/media/Git.svg": "/portafolio/static/media/Git.1f944ba916d632fda5ff.svg",
-    "static/media/wave.svg": "/portafolio/static/media/wave.0162dff345b56ea9ea21.svg",
+    "static/media/wave.svg": "/portafolio/static/media/wave.3b7f3a730edb16b225a5.svg",
     "static/media/Firebase.svg": "/portafolio/static/media/Firebase.06916b8648930adafd66.svg",
     "static/media/Vscode.svg": "/portafolio/static/media/Vscode.b048913f473bf148c5e2.svg",
     "static/media/Html.svg": "/portafolio/static/media/Html.c4dc271e3c51c59f3ce9.svg",
     "static/media/Css.svg": "/portafolio/static/media/Css.ae406505a52baef4b4ee.svg",
     "static/media/Java.svg": "/portafolio/static/media/Java.9723b91156c67f3cf6ba.svg",
-    "main.45e49cac.css.map": "/portafolio/static/css/main.45e49cac.css.map",
-    "main.54fac8df.js.map": "/portafolio/static/js/main.54fac8df.js.map",
+    "main.ff7d5888.css.map": "/portafolio/static/css/main.ff7d5888.css.map",
+    "main.58cd03a0.js.map": "/portafolio/static/js/main.58cd03a0.js.map",
     "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45e49cac.css",
-    "static/js/main.54fac8df.js"
+    "static/css/main.ff7d5888.css",
+    "static/js/main.58cd03a0.js"
   ]
 }
